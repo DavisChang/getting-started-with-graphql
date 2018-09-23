@@ -1,6 +1,7 @@
 # getting-started-with-graphql
 First try to use GraphQL 
 
+```
     React Apollo Client
            |                   ^ 
            |                   | 
@@ -17,4 +18,6 @@ First try to use GraphQL
         Database               |
            |                   |
            |                   |
-           |___________________|
+           |__ __ __ __ __ __ _|
+
+```
