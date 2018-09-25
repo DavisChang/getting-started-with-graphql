@@ -1,23 +1,36 @@
 // Provide resolver functions for your schema fields
-const authers = [{
-  name: 'Hello World',
-  age: 46,
-  Books: [
-    'Hello World',
-    'Hello World'
+const authors = [{
+  id: 1,
+  name: 'Kevin',
+  age: 11,
+  books: [
+    'Kevin book1',
+    'Kevin book2'
   ]
 },{
-  name: 'Hello World2',
+  id: 2,
+  name: 'Henry',
   age: 22,
-  Books: [
-    'Hello World2',
-    'Hello World2'
+  books: [
+    'Henry book1',
+    'Henry book2'
+  ]
+},{
+  id: 3,
+  name: 'Davis',
+  age: 22,
+  books: [
+    'Davis book1',
+    'Davis book2'
   ]
 }];
 
 const resolvers = {
   Query: {
-    auther: () => authers,
+    authors: () => authors,
+    author: (root, { id }) => {
+      return authors.find(author => author.id === id);
+    }
   },
 };
 

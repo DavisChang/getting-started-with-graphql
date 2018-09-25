@@ -4,15 +4,17 @@ import resolvers from './resolvers.js';
 const isMocks = false;
 
 const typeDefs = gql`
-type Auther {
+type Author {
+  id: ID
   age: Int
   name: String
-  Books: [String]
+  books: [String]
 }
 
 # the schema allows the following query:
 type Query {
-  auther: [Auther]
+  authors: [Author]
+  author(id: Int): Author
 }
 `;
 
