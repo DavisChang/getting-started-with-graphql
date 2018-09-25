@@ -5,7 +5,7 @@ const isMocks = false;
 
 const typeDefs = gql`
 type Author {
-  id: ID
+  id: String
   age: Int
   name: String
   books: [String]
@@ -14,7 +14,11 @@ type Author {
 # the schema allows the following query:
 type Query {
   authors: [Author]
-  author(id: Int): Author
+  author(id: String): Author
+}
+
+type Mutation {
+  addAuthor(name: String!, age: Int!, books: [String]!): Author
 }
 `;
 
