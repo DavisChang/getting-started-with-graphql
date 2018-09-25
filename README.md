@@ -23,7 +23,10 @@ First try to use GraphQL
 ```
 
 
-Database (MongoDB - http://localhost:27017)
+Database 
+
+1. MongoDB - http://localhost:27017
+2. Mongo Express - http://localhost:8081
 
 ```
 docker-compose -f database.yml up

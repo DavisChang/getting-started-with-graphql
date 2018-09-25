@@ -5,8 +5,13 @@ import schema from './schema.js';
 
 const server = new ApolloServer(schema);
 
-const connection = mongoose.connect('mongodb://localhost:27017');
-console.log('connection:', connection);
+const connection = mongoose.connect('mongodb://localhost:27017', {
+  useNewUrlParser: true,
+});
+
+connection.then((result) => {
+  console.log('connections success!');
+})
 
 const app = express();
 server.applyMiddleware({ app });
