@@ -31,3 +31,16 @@ Database
 ```
 docker-compose -f database.yml up
 ```
+
+# Query
+
+1. authors: [Author]
+2. author(id: String): Author
+
+
+# Mutation
+
+1. addAuthor(name: String!, age: Int!, books: [String]!)
+2. deleteAuthor(id: String!)
+3. updateAuthor(id: String!, name: String!)
+
