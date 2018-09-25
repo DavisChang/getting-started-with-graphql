@@ -22,8 +22,9 @@ First try to use GraphQL
 
 ```
 
-Database (MongoDB - http://localhost:37162)
 
-``
+Database (MongoDB - http://localhost:27017)
+
+```
 docker-compose -f database.yml up
 ```
