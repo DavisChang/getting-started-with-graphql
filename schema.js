@@ -1,4 +1,7 @@
 import { gql } from 'apollo-server-express';
+import resolvers from './resolvers.js';
+
+const isMocks = false;
 
 const typeDefs = gql`
 type Auther {
@@ -15,7 +18,8 @@ type Query {
 
 const schema = {
   typeDefs,
-  mocks: true,
+  resolvers,
+  mocks: isMocks,
 };
 
 export default schema;
