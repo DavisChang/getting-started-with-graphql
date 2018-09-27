@@ -1,5 +1,5 @@
 # getting-started-with-graphql
-First try to use GraphQL 
+First try to use GraphQL, Apollo Server Express, MongoDB, Mongo Express
 
 ```
     React Apollo Client
@@ -11,7 +11,7 @@ First try to use GraphQL
  (hands request to GraphGL)    | 
         GraphQL                | 
            |                   | 
-           |          (GraphGL retuen data)
+           |          (GraphGL return data)
     (Performs request)         |
            |                   |
            |                   |
